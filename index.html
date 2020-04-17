@@ -14,20 +14,35 @@
 
     <div class="signup_container">
       <div class="signup_box">
-        <section>
+        <header>
           <h1>Coding Market</h1>
           <div class="tab_container">
-            <a href="#">Login</a>
-            <a href="#">About Us</a>
+
+            <a class='tab login' href="#">Login</a>
+            <a class='tab about' href="#">About Us</a>
           </div>
-        </section>
+        </header>
         <section>
           <h1>Nice To See You Again!!</h1>
-          <label for="username">Username</label>
-          <span><i class="fas fa-profile"></i><input type="text"></span>
-          <label for="Password">Password</label>
-          <span><i class="fas fa-profile"></i><input type="text"></span>
-          <div class="login_button">Login</div>
+
+          <div class="input_container">
+            <label for="Username">Username</label>
+            <div class="icon_input_container">
+              <i class="fas fa-user-alt"></i><input type="text">
+              <div class="error_icon"><i class="fas fa-exclamation-circle"></i></div>
+            </div>
+            <div class="error_message"></div>
+            <label for="Password">Password</label>
+            <div class="icon_input_container">
+              <i class="fas fa-key"></i><input type="password">
+              <div class="error_icon"><i class="fas fa-exclamation-circle"></i></div>
+            </div>
+            <div class="error_message"></div>
+            <div class="login_button">Login</div>
+
+          </div>
+
+
         </section>
 
       </div>
